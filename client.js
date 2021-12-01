@@ -10,9 +10,10 @@ const connect = function () {
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
+  //when connected to the server. console log this && add a name to the snake
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
-    conn.write("Name: BS")
+    conn.write("Name: BS");
   })
 
   //handling data sent from the server
@@ -23,3 +24,4 @@ const connect = function () {
 };
 
 module.exports = {connect}
+
