@@ -7,15 +7,19 @@ const handleUserInput = function (data) {
   }
   if (data === "w") {
     connection.write("Move: up");
+    connection.write("Say: GET");
   }
   if (data === "a") {
     connection.write("Move: left");
+    connection.write("Say: OUT");
   }
   if (data === "s") {
     connection.write("Move: down");
+    connection.write("Say: THE");
   }
   if (data === "d") {
     connection.write("Move: right");
+    connection.write("Say: WAY");
   }
 };
 
